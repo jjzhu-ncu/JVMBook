@@ -5,4 +5,6 @@ public class TestClass {
 	public int inc(){
 		return m + 1;
 	}
+	public static void main(String[] args) {
+	}
 }
