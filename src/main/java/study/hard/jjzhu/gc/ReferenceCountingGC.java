@@ -1,4 +1,4 @@
-package study.hard.jjzhu.collection;
+package study.hard.jjzhu.gc;
 
 /** 
 * @ClassName: ReferenceCountingGC 
