@@ -22,6 +22,8 @@ public class CalendarTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		System.out.println(sdf1.format(new Date()));
 
 	}
 }

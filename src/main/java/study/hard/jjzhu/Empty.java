@@ -1,39 +1,22 @@
 package study.hard.jjzhu;
 
-import java.util.AbstractSet;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.Stack;
-import java.util.TreeMap;
-import java.util.Vector;
-import java.util.concurrent.LinkedBlockingQueue;
-
-import study.hard.jjzhu.source.TreeMapUsage;
-
-
+import java.util.Comparator;
 
 public class Empty {
+	
 	public static void main(String[] args) {
+		Comparator<Integer> myCmp = new Comparator<Integer>(){
 
-		List<String> v = new Vector<String>();
-		v.add("name");
-		v.iterator();
-		new ArrayList<String>();
-		new LinkedList<String>();
-		new Stack<String>();
-		new LinkedBlockingQueue<String>();
-		Set<String> s ;
-		SortedSet<String> ss ;
-		AbstractSet<String> as ;
-		HashSet<String> hs;
-		HashMap<String, String> hm;
-		TreeMap<String, String> tm;
+			public int compare(Integer first, Integer second) {
+				
+				return first < second ? -1 : (first == second ? 0 : 1);
+			}
+			
+		};
+		Integer a = 42;
+		Integer b = 42;
+		System.out.println(myCmp.compare(new Integer(42), new Integer(42)));
+		System.out.println(myCmp.compare(a, b));
 	}
 }
 
