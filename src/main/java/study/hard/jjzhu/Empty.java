@@ -1,22 +1,15 @@
 package study.hard.jjzhu;
 
-import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Empty {
 	
 	public static void main(String[] args) {
-		Comparator<Integer> myCmp = new Comparator<Integer>(){
-
-			public int compare(Integer first, Integer second) {
-				
-				return first < second ? -1 : (first == second ? 0 : 1);
-			}
-			
-		};
-		Integer a = 42;
-		Integer b = 42;
-		System.out.println(myCmp.compare(new Integer(42), new Integer(42)));
-		System.out.println(myCmp.compare(a, b));
+		Object[] objArr = new Long[10];
+		objArr[1] = "hello world";//ArrayStoreException
+		List<HashMap<String, String>> a =  new ArrayList<HashMap<String, String>>();
 	}
 }
 

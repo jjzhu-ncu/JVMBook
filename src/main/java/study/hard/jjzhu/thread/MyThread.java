@@ -1,4 +1,4 @@
-package stduy.hard.jjzhu.thread;
+package study.hard.jjzhu.thread;
 
 public class MyThread implements MyRunnable{
 
