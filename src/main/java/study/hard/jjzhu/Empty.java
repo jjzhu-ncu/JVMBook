@@ -1,15 +1,28 @@
 package study.hard.jjzhu;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 public class Empty {
-	
+	private class C{
+		int []c = {1, 2 , 3 , 4, 5};
+		
+		@Override
+		public String toString(){
+			StringBuilder sb = new StringBuilder(c.length);
+			for(int _ : c){
+				sb.append(String.valueOf(_));
+			}
+			return sb.toString();
+		}
+	}
+	public void m1(){
+		C c = new C();
+		m2(c);
+		System.out.println(c);
+	}
+	public void m2(C c){
+		c.c[1] = 3;
+	}
 	public static void main(String[] args) {
-		Object[] objArr = new Long[10];
-		objArr[1] = "hello world";//ArrayStoreException
-		List<HashMap<String, String>> a =  new ArrayList<HashMap<String, String>>();
+		new Empty().m1();
 	}
 }
 
